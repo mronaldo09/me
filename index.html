@@ -1,328 +1,437 @@
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="Web portofolio tailwind">
-    <meta name="keyword" content="tailwindcss, CSS, tailwind">
-    <title>Portofolio - Ronaldo</title>
-    <link rel="stylesheet" type="text/css" href="output.css">
-    <link rel="stylesheet" type="text/css" href="fontawesome-free/css/all.min.css">
-    <link rel="shortcut icon" href="img/rocket.jpg"/>
-    <style>
-        .gradient
-        {
-            background-image: linear-gradient(to bottom right,#4C51BF,#702459);
-        }
-        .gradient-skill
-        {
-            background-image: linear-gradient(#FC8181,#FED7D7);
-        }
-        .gradient-bottom
-        {
-            background-image: linear-gradient(#4C51BF,#702459);
-        }
-    </style>
-  </head>
-  <body>
-    <!--section navbar-->
-    <section class="w-screen mx-auto px-4">
-        <nav class="flex flex-wrap p-6 justify-between">
-			<!-- Logo -->
-            <div class="flex flex-shrink-0 mr-6"> 
-                <img src="img/rocket.jpg" class="h-10 w-50 mr-2">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ronaldo - Full Stack Developer & Educator</title>
+    <meta name="description" content="Experienced Full Stack Developer with 4+ years building scalable web applications. Specialized in Laravel, Vue.js, and teaching coding to the next generation.">
+    <meta name="keywords" content="Full Stack Developer, Laravel, Vue.js, Web Development, Python Tutor, Roblox Lua">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/game.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="#home" class="logo">
+                <i class="fas fa-rocket"></i> Ronaldo
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#playground" class="nav-link">Mini Game</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="#contact" class="cta-button">Let's Talk</a>
+        </div>
+    </nav>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero" id="about">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>
+                    Transforming Ideas into 
+                    <span class="highlight">Powerful Digital Solutions</span>
+                </h1>
+                <p>
+                    Full-stack developer with 5+ years of expertise building scalable web applications. 
+                    Passionate about clean code, innovative solutions, and mentoring the next generation 
+                    of developers. Let's create something extraordinary together.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <i class="fas fa-briefcase"></i> View My Work
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projects & Features Delivered</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Students Mentored</div>
+                    </div>
+                </div>
             </div>
-			
-			<!-- Menu -->
-            <div class="block lg:hidden">
-                <a class="flex items-center px-3 py-2 rounded border border-indigo-400 text-indigo-500 hover:text-indigo-700 hover:border-indigo-700">
-                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <img src="img/me.JPG" alt="Muhammad Ronaldo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SKILLS SECTION ============ -->
+    <section class="skills" id="skills">
+        <h2 class="section-title">Technical Expertise</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">Specialized in modern web technologies and development practices</p>
+
+        <div class="skills-grid">
+            <div class="skill-card fade-in">
+                <div class="skill-icon"><i class="fas fa-code"></i></div>
+                <h3>Backend Development</h3>
+                <div class="skill-items">
+                    <span class="skill-tag">Laravel</span>
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">APIs</span>
+                </div>
+            </div>
+
+            <div class="skill-card fade-in">
+                <div class="skill-icon"><i class="fas fa-palette"></i></div>
+                <h3>Frontend Development</h3>
+                <div class="skill-items">
+                    <span class="skill-tag">Vue.js</span>
+                    <span class="skill-tag">Next.js</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">Bootstrap</span>
+                    <span class="skill-tag">Tailwind CSS</span>
+                </div>
+            </div>
+
+            <div class="skill-card fade-in">
+                <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                <h3>Tools & Platforms</h3>
+                <div class="skill-items">
+                    <span class="skill-tag">Git/GitHub</span>
+                    <span class="skill-tag">Azure</span>
+                    <span class="skill-tag">Trello</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">WordPress</span>
+                    <span class="skill-tag">Roblox Studio</span>
+                </div>
+            </div>
+
+            <div class="skill-card fade-in">
+                <div class="skill-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h3>Teaching & Mentoring</h3>
+                <div class="skill-items">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Lua/Roblox</span>
+                    <span class="skill-tag">Game Dev</span>
+                    <span class="skill-tag">Code Review</span>
+                </div>
+            </div>
+
+            <div class="skill-card fade-in">
+                <div class="skill-icon"><i class="fas fa-chess"></i></div>
+                <h3>Soft Skills</h3>
+                <div class="skill-items">
+                    <span class="skill-tag">Agile/Scrum</span>
+                    <span class="skill-tag">Leadership</span>
+                    <span class="skill-tag">Communication</span>
+                    <span class="skill-tag">Problem Solving</span>
+                    <span class="skill-tag">Team Collaboration</span>
+                </div>
+            </div>
+
+            <div class="skill-card fade-in">
+                <div class="skill-icon"><i class="fas fa-language"></i></div>
+                <h3>Languages</h3>
+                <div class="skill-items">
+                    <span class="skill-tag">🇮🇩 Indonesian</span>
+                    <span class="skill-tag">🇺🇸 English</span>
+                    <span class="skill-tag">Limited Working Proficiency</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS SECTION ============ -->
+    <section class="achievements">
+        <h2 class="section-title">Milestones & Achievements</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">Track record of delivering excellence</p>
+
+        <div class="achievements-grid">
+            <div class="achievement-card fade-in">
+                <div class="achievement-icon">🚀</div>
+                <div class="achievement-number">50+</div>
+                <div class="achievement-label">Projects & Features Delivered</div>
+            </div>
+            <div class="achievement-card fade-in">
+                <div class="achievement-icon">👥</div>
+                <div class="achievement-number">100+</div>
+                <div class="achievement-label">Students Trained</div>
+            </div>
+            <div class="achievement-card fade-in">
+                <div class="achievement-icon">⏱️</div>
+                <div class="achievement-number">5+</div>
+                <div class="achievement-label">Years in Tech</div>
+            </div>
+            <div class="achievement-card fade-in">
+                <div class="achievement-icon">🎯</div>
+                <div class="achievement-number">3</div>
+                <div class="achievement-label">Professional Roles</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ MINI GAME SECTION ============ -->
+    <section class="game-section" id="playground">
+        <h2 class="section-title">Mini Game</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">Take a break! Put your skills to the test in this mini-game.</p>
+        <div class="game-card">
+            <h3>🚀 Artemis II</h3>
+
+            <div id="gameArea">
+                <div id="storyOverlay" class="game-overlay">
+                    <div class="story-content">
+                        <h4>Artemis II</h4>
+                        <p>Humans are headed back to the Moon! Command the SLS rocket as you dodge deadly meteors. Grab every star you can to maximize your high score!</p>
+                        <p>Controls: Left/Right Arrow to evade.</p>
+                        <button onclick="startCountdown()" class="btn btn-primary">Start Game</button>
+                    </div>
+                </div>
+
+                <div id="countdownOverlay" class="game-overlay" style="display:none;">
+                    <h1 id="countdownText">3</h1>
+                </div>
+
+                <div id="gameOverOverlay" class="game-overlay" style="display:none;">
+                    <h2 id="finalStatus">MISSION FAILED</h2>
+                    <p>Your Score: <span id="finalScore">0</span></p>
+                    <button onclick="resetGame()" class="btn btn-primary">Play Again</button>
+                </div>
+
+                <div id="rocket">
+                    <img src="img/rocket.png" alt="Rocket">
+                </div>
+                
+                <div id="scoreBoard">Stars: <span id="scoreText">0</span></div>
+
+                <div class="game-status">
+                    Time: <span id="time">0</span>s
+                </div>
+            </div>
+
+            <div class="mobile-controls">
+                <button class="ctrl-btn" onmousedown="keys['arrowleft']=true" onmouseup="keys['arrowleft']=false" ontouchstart="keys['arrowleft']=true" ontouchend="keys['arrowleft']=false">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="ctrl-btn" onmousedown="keys['arrowright']=true" onmouseup="keys['arrowright']=false" ontouchstart="keys['arrowright']=true" ontouchend="keys['arrowright']=false">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <div class="game-status">
+                Time: <span id="time">0</span>s
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PROJECTS SECTION ============ -->
+    <section class="projects" id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">Showcasing my most impactful work</p>
+
+        <div class="projects-grid">
+            <div class="project-card fade-in">
+                <div class="project-image">
+                    <i class="fas fa-database"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">E-Data Research System</h3>
+                    <p class="project-description">
+                        Comprehensive research and community service management system for LP4M IIB Darmajaya. 
+                        Streamlines lecturer projects and enhances institutional efficiency.
+                    </p>
+                    <div class="project-tech">
+                        <span class="project-tech-tag">Laravel</span>
+                        <span class="project-tech-tag">MySQL</span>
+                        <span class="project-tech-tag">Bootstrap</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://scholar.google.co.id/citations?view_op=view_citation&hl=id&user=5JNZMz0AAAAJ&citation_for_view=5JNZMz0AAAAJ:Zph67rFs4hoC" class="project-link project-link-primary" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <div class="project-image" style="background: linear-gradient(135deg, #EC4899 0%, #F97316 100%);">
+                    <i class="fas fa-users-cog"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">HR Integrated Assessment System</h3>
+                    <p class="project-description">
+                        Developed/Optimized a digital assessment platform for HR consulting, enabling seamless data capture and real-time behavioral analytics for corporate clients.
+                    </p>
+                    <div class="project-tech">
+                        <span class="project-tech-tag">Laravel</span>
+                        <span class="project-tech-tag">Vue.js</span>
+                        <span class="project-tech-tag">MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://humancareconsulting.com" class="project-link project-link-primary" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <div class="project-image" style="background: linear-gradient(135deg, #10B981 0%, #06B6D4 100%);">
+                    <i class="fas fa-industry"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Corporate Digital Platform & Security Hardening: Kapal Api Group</h3>
+                    <p class="project-description">
+                        Developed Kapal Api’s corporate website from the ground up while implementing advanced security hardening. 
+                        I successfully restored the brand’s digital integrity by resolving critical spam vulnerabilities and delivering a secure, high-performance professional platform.
+                    </p>
+                    <div class="project-tech">
+                        <span class="project-tech-tag">WordPress</span>
+                        <span class="project-tech-tag">Backend & Ops</span>
+                        <span class="project-tech-tag">CSS</span>
+                        <span class="project-tech-tag">Security & Maintenance</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://kapalapi.com" class="project-link project-link-primary" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ EXPERIENCE SECTION ============ -->
+    <section class="experience" id="experience">
+        <h2 class="section-title">Professional Journey</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">Building expertise across diverse roles and industries</p>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="experience-content">
+                    <div class="experience-card">
+                        <div class="experience-title">Full-Stack Developer</div>
+                        <div class="experience-company">Human Care Consulting</div>
+                        <div class="experience-date">December 2021 - Present • 5+ Years</div>
+                        <div class="experience-description">
+                            Accelerating platform growth through strategic feature development, proactive bug resolution, and the creation of standardized technical documentation to ensure system scalability.
+                        </div>
+                        <a href="https://www.humancareconsulting.com" target="_blank" class="experience-link">
+                            <i class="fas fa-globe"></i> Visit Company
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="experience-content">
+                    <div class="experience-card">
+                        <div class="experience-title">Python & Roblox Lua Tutor</div>
+                        <div class="experience-company">Kodland</div>
+                        <div class="experience-date">August 2022 - Present • 2+ Years</div>
+                        <div class="experience-description">
+                            Mentoring students in Python and Roblox (Lua) development, guiding them through complex logical problem-solving, and delivering data-driven progress reports to track their journey in game design and programming.
+                        </div>
+                        <a href="https://www.kodland.org" target="_blank" class="experience-link">
+                            <i class="fas fa-globe"></i> Visit Company
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="experience-content">
+                    <div class="experience-card">
+                        <div class="experience-title">Technical Support Manager</div>
+                        <div class="experience-company">Kodland</div>
+                        <div class="experience-date">April 2023 - Present • 2+ Years</div>
+                        <div class="experience-description">
+                            Overseeing end-to-end technical operations for digital classrooms, resolving complex technical issues for tutors and students, and delivering comprehensive analytical reports to ensure seamless learning experiences.
+                        </div>
+                        <a href="https://www.kodland.org" target="_blank" class="experience-link">
+                            <i class="fas fa-globe"></i> Visit Company
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT SECTION ============ -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Ready to Work Together?</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">Let's discuss your next project or opportunity</p>
+
+        <div class="contact-content">
+            <p style="font-size: 1.1rem; margin: 2rem 0;">
+                I'm always interested in hearing about new projects and opportunities. 
+                Feel free to reach out through any of the channels below.
+            </p>
+
+            <a href="mailto:ronaldotech09@gmail.com" class="contact-email">
+                ronaldotech09@gmail.com
+            </a>
+
+            <div class="social-links">
+                <a href="https://linkedin.com/in/muhammad-ronaldo-9522371b3/" target="_blank" class="social-link" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/mronaldo09" target="_blank" class="social-link" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://instagram.com/ronaldo_rldo/" target="_blank" class="social-link" title="Instagram">
+                    <i class="fab fa-instagram"></i>
                 </a>
             </div>
-            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                <div class="text-sm lg:flex-grow">
-                    <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">
-                        About me
-                    </a>
-                    <a href="#skill" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">
-                        Skill Framework
-                    </a>
-                    <a href="#recent" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">
-                        Latest Project
-                    </a>
-                    <a href="#work-exp" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">
-                        Work Experience
-                    </a>
-                    <a href="#language-skills" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">
-                        Language Skills
-                    </a>
-                
-                    <!-- <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">
-                        Contact me
-                    </a> -->
-                </div>
-                <div>
-                    <a href="#contact" class="inline-block text-sm px-4 py-2 rounded text-gray-600 border border-gray-600 hover:border-transpaent hover:text-white hover:bg-indigo-700 mt-4 lg:mt-0">
-                        Contact Me
-                    </a>
-                </div>
-            </div>
-        </nav>
-    </section>
-	<!-- end navbar -->
-	
-    <!-- section about -->
-    <section id="about" class="w-screen mx-auto py-4 gradient">
-		<!-- sambutan -->
-        <div class="px-16 py-8 text-center text-white">
-            <h1 class="w-full text-5xl font-bold ">About me</h1>
-            <div class="mb-4">
-                <div class="bg-white w-2/3 md:w-1/6 opacity-75 rounded h-1 mx-auto"></div>
-            </div>
-            <h2 class="text-3xl font-bold mb-2 ">
-                Hello, I'm Ronaldo. Nice to meet you!
-            </h2>
-            <h3 class="text-lg mb-2">
-                Fullstack Developer with over 4 years of experience in web application development using Laravel and Vue.js. Skilled in building responsive and user-friendly frontends, seamless API integration with the backend, database performance optimization, and API integration. Experienced in working within Agile environments. Additionally, a tutor for Python and Lua in Roblox Studio, with expertise in teaching coding and game development. Actively involved in creating educational materials and guiding students in developing their own game projects.
-	        </h3>
-            <div class="w-full">
-                <div class="px-4 py-4 ">
-					<!-- source image baby.jpg didownload dari situs unsplash.com, koleksi Troy T - @ttcollect -->
-                    <img src="img/me.JPG" class="shadow-lg rounded-full max-w-full mx-auto text-center w-48"> 
-                </div>
-            </div>
-        </div>
-		<!-- box portofolio -->
-        <div class="grid grid-cols-1 md:grid-cols-3 bg-white py-4 px-4 md:py-8 md:px-8 m-16 rounded-lg">
-			<!-- box pertama -->
-            <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
-                <i class="fas fa-laptop-code text-blue-500 fa-5x mb-6"></i>
-                <div class="p-4 ">
-                    <p class="font-bold text-lg md:text-xl mb-6">Programming</p>
-                    <p class="text-gray-600 text-base mb-2">PHP</p>
-                    <hr class="text-gray-600 mb-2">
-                    <p class="text-gray-600 text-base mb-2">JavaScript</p>
-                    <hr class="text-gray-600 mb-2">
-                    <p class="text-gray-600 text-base mb-2">Python</p>
-                    <hr class="text-gray-600 mb-2">
-                    <p class="text-gray-600 text-base mb-2">CSS</p>
-                    <hr class="text-gray-600 mb-2">
-                    <p class="text-gray-600 text-base mb-2">HTML5</p>
-                    <hr class="text-gray-600 mb-2"> 
-                    <p class="text-gray-600 text-base mb-2">MySQL</p>
-                </div>
-                <div class="px-2 py-4" hidden>
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portofolio</button>
-                </div>
-            </div>
-			
-			<!-- box kedua -->
-            <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
-                <i class="fas fa-tools text-red-500 fa-5x mb-6"></i>
-                <div class="p-4 ">
-                    <p class="font-bold text-lg md:text-xl mb-6">Tool</p>
-                    <p class="text-gray-600 text-base mb-2">Microsoft Azure</p>
-                    <hr class="text-gray-600 mb-2">
-                    <p class="text-gray-600 text-base mb-2">Trello</p>
-                    <hr class="text-gray-600 mb-2">
-                    <p class="text-gray-600 text-base mb-2">Github</p>
-                </div>
-                <div class="px-2 py-4" hidden>
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portofolio</button>
-                </div>
-            </div>
-			
-			<!-- box ketiga -->
-            <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
-                <i class="fas fa-search text-green-500 fa-5x mb-6"></i>
-                <div class="p-4 ">
-                    <p class="font-bold text-lg md:text-xl mb-6">Systems Analyst</p>
-                    <p class="text-gray-600 text-base mb-2">Unified Modeling Language</p>
-                    <hr class="text-gray-600 mb-2">
-                    <p class="text-gray-600 text-base mb-2">Creately</p>
-                    <hr class="text-gray-600 mb-2">
-                    <p class="text-gray-600 text-base mb-2">StarUML</p>
-                </div>
-                <div class="px-2 py-4" hidden>
-                    <button class="bg-blue-500 hover:bg-blue-700  text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portofolio</button>
-                </div>
-            </div>
-            
-        </div>
-    </section>
-	<!-- end about me -->
-	
-    <!-- section skill framework -->
-    <section id="skill" class="container mx-auto py-4 bg-white px-4">
-        <div class="flex flex-wrap">
-			<!-- box pertama menampilkan gambar -->
-            <div class="w-full md:w-4/12 ml-auto mr-auto px-4 mt-20">
-				<!-- source img4.jpg didownload dari situs unsplash.com, Jess Bailey - @jessbailey-->
-				<img src="img/skills.jpg" class="max-w-full rounded-lg shadow-lg">
-            </div>
-			
-			<!-- box kedua menampilkan skill framework -->
-            <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
-                <div class="md:pr-12">
-                    <h1 class="w-full my-2 text-5xl font-bold text-center text-gray-700">Framework Skills</h1>
-                    <div class="mb-4">
-                        <div class="h-1 mx-auto gradient  w-2/3  opacity-75 my-0 mx-0 rounded"></div>
-                    </div>
-                    <p class="mt-4 text-lg text-gray-600">Here are my skills and scale for the framework :</p>
-                    <ul class="list-none mt-4">
-                        <li class="grid grid-cols-2 py-2">
-                            <p class="text-lg text-gray-600">Laravel</p>
-                            <div class="gradient w-7/8"></div>
-                        </li>
-                        <li class="grid grid-cols-2 py-2">
-                            <p class="text-lg text-gray-600">Vue.js</p>
-                            <div class="gradient w-5/6"></div>
-                        </li>
-                        <li class="grid grid-cols-2 py-2">
-                            <p class="text-lg text-gray-600">Bootstrap</p>
-                            <div class="gradient w-7/8"></div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-	<!-- end skill framework -->
-	
-	<!-- section my recent work -->
-    <section id="recent" class="w-screen mx-auto py-8 bg-white">
-        <div class="text-center mb-8">
-            <h1 class="w-full my-2 text-5xl font-bold text-gray-700">My Latest Project</h1>
-            <div class="mb-4">
-                <div class="h-1 mx-auto gradient  w-2/3 md:w-1/4 opacity-75 my-0 py-0 rounded"></div>
-            </div>
-            <p class="text-lg m-4 text-gray-600">Here is my last project : </p>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 m-8">
-            
-			<!-- source img4.jpg didownload dari situs unsplash.com, Jess Bailey - @jessbailey-->
-            <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
-                <img src="img/laravel.png" class="w-full rounded-lg">
-                <div class="px-2 py-2 text-center">
-                    <p class="font-bold text-xl mb-2 text-gray-700">E-Data System for research and community service lecturers at LP4M Informatics & Business Institute Darmajaya</p>
-                    <p class="text-gray-700 text-base">E-Data System for research and community service lecturers at LP4M IIB Darmajaya using laravel.</p>
-                </div>
-            </div>
-            <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
-				<!-- source img1.jpg didownload dari situs unsplash.com, koleksi Clément H - - @clemhlrdt -->
-                <img src="img/vue_laravel.png" class="w-full rounded-lg">
-                <div class="px-2 py-2 text-center">
-                    <p class="font-bold text-xl mb-2 text-gray-700">Develop and maintain HR Management System owned by Human Care Consulting Company</p>
-                    <p class="text-gray-700 text-base">Develop and maintain HR Management System owned by Human Care Consulting Company using laravel & vue.js.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-	<!-- end my recent work -->
-	
-	<!-- section Work Exp -->
-    <section id="work-exp" class="w-screen mx-auto py-4 gradient-bottom">
-        <h1 class="w-full my-2 text-5xl font-bold text-center text-white">Work Experience</h1>
-        <div class="mb-4">
-            <div class="h-1 mx-auto bg-white  w-2/3 md:w-1/6 opacity-75 my-0 py-0 rounded"></div>
-        </div>
-        <div class="container p-4 mb-6 w-full lg:w-1/2 shadow-lg rounded-lg bg-white mx-auto">
-            <h4 class="text-2xl font-semibold">Full-stack Developer</h4>
-            <p class="mt-1 mb-4 text-gray-600">Human Care Consulting, January 2021 - Now</p>
-            <p class="mt-1 mb-4 text-gray-600">Jakarta Selatan, Jakarta, Indonesia (Remote)</p>
-            <a href="https://www.humancareconsulting.com" target="_blank" class="hover:text-indigo-900">
-                <i class="fas fa-globe"></i> https://www.humancareconsulting.com			 
-            </a>
-            <br>
-            <br>
-	    <hr>
-            <h4 class="text-2xl font-semibold">Technical Support Manager</h4>
-            <p class="mt-1 mb-4 text-gray-600">Kodland, April 2023 - Now</p>
-            <p class="mt-1 mb-4 text-gray-600">Remote</p>
-            <a href="https://www.kodland.org" target="_blank" class="hover:text-indigo-900">
-                <i class="fas fa-globe"></i> https://www.kodland.org			 
-            </a>
-	    <br>
-            <br>
-	    <hr>
-            <h4 class="text-2xl font-semibold">Python and Roblox (Lua) Tutor</h4>
-            <p class="mt-1 mb-4 text-gray-600">Kodland, August 2022 - Now</p>
-            <p class="mt-1 mb-4 text-gray-600">Remote</p>
-            <a href="https://www.kodland.org" target="_blank" class="hover:text-indigo-900">
-                <i class="fas fa-globe"></i> https://www.kodland.org			 
-            </a>
-            <br>
-            <br>
-        </div>
-    </section>
-	<!-- end section Work Exp -->
 
-    <section id="language-skills" class="container mx-auto py-4 bg-white px-4">
-        <div class="flex flex-wrap">
-			<!-- box pertama menampilkan gambar -->
-            <div class="w-full md:w-4/12 ml-auto mr-auto px-4 mt-20">
-				<!-- source img4.jpg didownload dari situs unsplash.com, Jess Bailey - @jessbailey-->
-				<img src="img/programmer.jpg" class="max-w-full rounded-lg shadow-lg">
-            </div>
-			
-			<!-- box kedua menampilkan skill framework -->
-            <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
-                <div class="md:pr-12">
-                    <h1 class="w-full my-2 text-5xl font-bold text-center text-gray-700">My Language Skills</h1>
-                    <div class="mb-4">
-                        <div class="h-1 mx-auto gradient  w-2/3  opacity-75 my-0 mx-0 rounded"></div>
-                    </div>
-                    <p class="mt-4 text-lg text-gray-600">Here are my language skills :</p>
-                    <ul class="list-none mt-4">
-                        <li class="grid grid-cols-2 py-2">
-                            <p class="text-lg text-gray-600">Indonesian</p>
-                            <div class="gradient w-7/8"></div>
-                        </li>
-                        <li class="grid grid-cols-2 py-2">
-                            <p class="text-lg text-gray-600">English</p>
-                            <div class="gradient w-5/6"></div>
-                        </li>
-                    </ul>
-                </div>
+            <div class="contact-buttons">
+                <a href="mailto:ronaldotech09@gmail.com" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i> Send Email
+                </a>
+                <a href="https://linkedin.com/in/muhammad-ronaldo-9522371b3/" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-linkedin-in"></i> Connect on LinkedIn
+                </a>
             </div>
         </div>
     </section>
-	
-	<!-- section footer -->
-    <section id="contact" class="w-screen mx-auto py-4 bg-white mt-8 mb-8">
-		  <div class="text-center">
-			 <a href="https://www.linkedin.com/in/muhammad-ronaldo-9522371b3/" target="_blank" class="text-indigo-700 hover:text-indigo-900 p-2 ">
-               	 	   <i class="fa-2x fab fa-linkedin"></i>
-			 </a>
-			 <a href="https://www.instagram.com/ronaldo_rldo/" target="_blank" class="text-indigo-700 hover:text-indigo-900 p-2 ">
-			   <i class="fa-2x fab fa-instagram"></i>
-			 </a>
-			  <a href="https://github.com/mronaldo09" target="_blank" class="text-indigo-700 hover:text-indigo-900 p-2 ">
-			   <i class="fa-2x fab fa-github"></i>
-			 </a>
-		 </div>
-		 <div class="text-center mt-4 text-gray-600">
-            <input type="text" value="ronaldo.lampung09@gmail.com" id="myInput" hidden>
-            <button  class="hover:text-indigo-900" onclick="myFunction()"><i class="far fa-envelope"></i> : ronaldo.lampung09@gmail.com</button >
-            <br>
-            <i class="fas fa-map-marker-alt"></i> Lampung, Indonesia
-        </div>
-    </section>
-	<!-- end footer -->
 
-    <script>
-        function myFunction() {
-        /* Get the text field */
-        var copyText = document.getElementById("myInput");
+    <!-- ============ FOOTER ============ -->
+    <footer>
+        <p>&copy; 2026 Muhammad Ronaldo. All rights reserved. 🚀</p>
+        <!-- <p style="margin-top: 0.5rem; font-size: 0.9rem;">Based in Lampung, Indonesia</p> -->
+    </footer>
 
-        /* Select the text field */
-        copyText.select();
-        copyText.setSelectionRange(0, 99999); /* For mobile devices */
-
-        /* Copy the text inside the text field */
-        navigator.clipboard.writeText(copyText.value);
-
-        /* Alert the copied text */
-        alert("copy email successful");
-        }
-    </script>
-  </body>
+    <script src="scripts/game.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
 </html>

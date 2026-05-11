@@ -1,0 +1,141 @@
+
+
+#gameArea {
+    width: 100%; 
+    max-width: 420px; 
+    aspect-ratio: 420 / 500; 
+    height: 500px; 
+    
+    background-image: url('../img/bg.png'); 
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgba(255,255,255,0.2);
+}
+
+#rocket {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    
+    /* Formula: (420 / 2) - (200 / 2) = 110 */
+    left: 110px; 
+    bottom: -10px;
+}
+
+#rocket img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#moon{
+    position:absolute;
+    top:10px;
+    left:180px;
+    font-size:50px;
+}
+
+.meteor {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+}
+
+.meteor img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.game-card{
+    background:white;
+    padding:2rem;
+    border-radius:20px;
+    max-width:520px;
+    width:100%;
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+}
+
+.game-section {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    text-align: center;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.game-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    
+    width: 100%;             /* Fleksibel */
+    max-width: 520px;        /* Batas lebar maksimal */
+    margin: 0 auto;          /* Paksa berada di tengah */
+}
+
+.game-input-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#guessInput {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid var(--border);
+    width: 80px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#gameMessage {
+    font-weight: 500;
+    margin: 15px 0;
+    color: var(--primary);
+}
+
+.game-status {
+    position: absolute; top: 10px; right: 310px;
+    background: rgba(255,255,255,0.1); padding: 5px 15px;
+    border-radius: 20px; font-weight: bold; color: white;
+    white-space: nowrap;
+}
+
+.game-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(15, 23, 42, 0.9);
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    z-index: 10; padding: 20px; color: white;
+}
+
+.story-content { text-align: center; }
+#countdownText { font-size: 5rem; font-weight: 800; color: var(--secondary); }
+
+#scoreBoard {
+    position: absolute; top: 10px; right: 10px;
+    background: rgba(255,255,255,0.1); padding: 5px 15px;
+    border-radius: 20px; font-weight: bold; color: gold;
+}
+
+.mobile-controls {
+    display: flex; justify-content: center; gap: 2rem; margin-top: 1rem;
+}
+
+.ctrl-btn {
+    width: 60px; height: 60px; border-radius: 50%;
+    border: none; background: var(--gradient-1); color: white;
+    font-size: 1.5rem; cursor: pointer;
+}
+
+.star { position: absolute; width: 40px; height: 40px; }

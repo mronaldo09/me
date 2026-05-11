@@ -1,0 +1,328 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Web portofolio tailwind">
+    <meta name="keyword" content="tailwindcss, CSS, tailwind">
+    <title>Portofolio - Ronaldo</title>
+    <link rel="stylesheet" type="text/css" href="output.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome-free/css/all.min.css">
+    <link rel="shortcut icon" href="img/rocket.jpg"/>
+    <style>
+        .gradient
+        {
+            background-image: linear-gradient(to bottom right,#4C51BF,#702459);
+        }
+        .gradient-skill
+        {
+            background-image: linear-gradient(#FC8181,#FED7D7);
+        }
+        .gradient-bottom
+        {
+            background-image: linear-gradient(#4C51BF,#702459);
+        }
+    </style>
+  </head>
+  <body>
+    <!--section navbar-->
+    <section class="w-screen mx-auto px-4">
+        <nav class="flex flex-wrap p-6 justify-between">
+			<!-- Logo -->
+            <div class="flex flex-shrink-0 mr-6"> 
+                <img src="img/rocket.jpg" class="h-10 w-50 mr-2">
+            </div>
+			
+			<!-- Menu -->
+            <div class="block lg:hidden">
+                <a class="flex items-center px-3 py-2 rounded border border-indigo-400 text-indigo-500 hover:text-indigo-700 hover:border-indigo-700">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                </a>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">
+                        About me
+                    </a>
+                    <a href="#skill" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">
+                        Skill Framework
+                    </a>
+                    <a href="#recent" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">
+                        Latest Project
+                    </a>
+                    <a href="#work-exp" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">
+                        Work Experience
+                    </a>
+                    <a href="#language-skills" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">
+                        Language Skills
+                    </a>
+                
+                    <!-- <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">
+                        Contact me
+                    </a> -->
+                </div>
+                <div>
+                    <a href="#contact" class="inline-block text-sm px-4 py-2 rounded text-gray-600 border border-gray-600 hover:border-transpaent hover:text-white hover:bg-indigo-700 mt-4 lg:mt-0">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </section>
+	<!-- end navbar -->
+	
+    <!-- section about -->
+    <section id="about" class="w-screen mx-auto py-4 gradient">
+		<!-- sambutan -->
+        <div class="px-16 py-8 text-center text-white">
+            <h1 class="w-full text-5xl font-bold ">About me</h1>
+            <div class="mb-4">
+                <div class="bg-white w-2/3 md:w-1/6 opacity-75 rounded h-1 mx-auto"></div>
+            </div>
+            <h2 class="text-3xl font-bold mb-2 ">
+                Hello, I'm Ronaldo. Nice to meet you!
+            </h2>
+            <h3 class="text-lg mb-2">
+                Fullstack Developer with over 4 years of experience in web application development using Laravel and Vue.js. Skilled in building responsive and user-friendly frontends, seamless API integration with the backend, database performance optimization, and API integration. Experienced in working within Agile environments. Additionally, a tutor for Python and Lua in Roblox Studio, with expertise in teaching coding and game development. Actively involved in creating educational materials and guiding students in developing their own game projects.
+	        </h3>
+            <div class="w-full">
+                <div class="px-4 py-4 ">
+					<!-- source image baby.jpg didownload dari situs unsplash.com, koleksi Troy T - @ttcollect -->
+                    <img src="img/me.JPG" class="shadow-lg rounded-full max-w-full mx-auto text-center w-48"> 
+                </div>
+            </div>
+        </div>
+		<!-- box portofolio -->
+        <div class="grid grid-cols-1 md:grid-cols-3 bg-white py-4 px-4 md:py-8 md:px-8 m-16 rounded-lg">
+			<!-- box pertama -->
+            <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
+                <i class="fas fa-laptop-code text-blue-500 fa-5x mb-6"></i>
+                <div class="p-4 ">
+                    <p class="font-bold text-lg md:text-xl mb-6">Programming</p>
+                    <p class="text-gray-600 text-base mb-2">PHP</p>
+                    <hr class="text-gray-600 mb-2">
+                    <p class="text-gray-600 text-base mb-2">JavaScript</p>
+                    <hr class="text-gray-600 mb-2">
+                    <p class="text-gray-600 text-base mb-2">Python</p>
+                    <hr class="text-gray-600 mb-2">
+                    <p class="text-gray-600 text-base mb-2">CSS</p>
+                    <hr class="text-gray-600 mb-2">
+                    <p class="text-gray-600 text-base mb-2">HTML5</p>
+                    <hr class="text-gray-600 mb-2"> 
+                    <p class="text-gray-600 text-base mb-2">MySQL</p>
+                </div>
+                <div class="px-2 py-4" hidden>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portofolio</button>
+                </div>
+            </div>
+			
+			<!-- box kedua -->
+            <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
+                <i class="fas fa-tools text-red-500 fa-5x mb-6"></i>
+                <div class="p-4 ">
+                    <p class="font-bold text-lg md:text-xl mb-6">Tool</p>
+                    <p class="text-gray-600 text-base mb-2">Microsoft Azure</p>
+                    <hr class="text-gray-600 mb-2">
+                    <p class="text-gray-600 text-base mb-2">Trello</p>
+                    <hr class="text-gray-600 mb-2">
+                    <p class="text-gray-600 text-base mb-2">Github</p>
+                </div>
+                <div class="px-2 py-4" hidden>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portofolio</button>
+                </div>
+            </div>
+			
+			<!-- box ketiga -->
+            <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
+                <i class="fas fa-search text-green-500 fa-5x mb-6"></i>
+                <div class="p-4 ">
+                    <p class="font-bold text-lg md:text-xl mb-6">Systems Analyst</p>
+                    <p class="text-gray-600 text-base mb-2">Unified Modeling Language</p>
+                    <hr class="text-gray-600 mb-2">
+                    <p class="text-gray-600 text-base mb-2">Creately</p>
+                    <hr class="text-gray-600 mb-2">
+                    <p class="text-gray-600 text-base mb-2">StarUML</p>
+                </div>
+                <div class="px-2 py-4" hidden>
+                    <button class="bg-blue-500 hover:bg-blue-700  text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portofolio</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+	<!-- end about me -->
+	
+    <!-- section skill framework -->
+    <section id="skill" class="container mx-auto py-4 bg-white px-4">
+        <div class="flex flex-wrap">
+			<!-- box pertama menampilkan gambar -->
+            <div class="w-full md:w-4/12 ml-auto mr-auto px-4 mt-20">
+				<!-- source img4.jpg didownload dari situs unsplash.com, Jess Bailey - @jessbailey-->
+				<img src="img/skills.jpg" class="max-w-full rounded-lg shadow-lg">
+            </div>
+			
+			<!-- box kedua menampilkan skill framework -->
+            <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+                <div class="md:pr-12">
+                    <h1 class="w-full my-2 text-5xl font-bold text-center text-gray-700">Framework Skills</h1>
+                    <div class="mb-4">
+                        <div class="h-1 mx-auto gradient  w-2/3  opacity-75 my-0 mx-0 rounded"></div>
+                    </div>
+                    <p class="mt-4 text-lg text-gray-600">Here are my skills and scale for the framework :</p>
+                    <ul class="list-none mt-4">
+                        <li class="grid grid-cols-2 py-2">
+                            <p class="text-lg text-gray-600">Laravel</p>
+                            <div class="gradient w-7/8"></div>
+                        </li>
+                        <li class="grid grid-cols-2 py-2">
+                            <p class="text-lg text-gray-600">Vue.js</p>
+                            <div class="gradient w-5/6"></div>
+                        </li>
+                        <li class="grid grid-cols-2 py-2">
+                            <p class="text-lg text-gray-600">Bootstrap</p>
+                            <div class="gradient w-7/8"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!-- end skill framework -->
+	
+	<!-- section my recent work -->
+    <section id="recent" class="w-screen mx-auto py-8 bg-white">
+        <div class="text-center mb-8">
+            <h1 class="w-full my-2 text-5xl font-bold text-gray-700">My Latest Project</h1>
+            <div class="mb-4">
+                <div class="h-1 mx-auto gradient  w-2/3 md:w-1/4 opacity-75 my-0 py-0 rounded"></div>
+            </div>
+            <p class="text-lg m-4 text-gray-600">Here is my last project : </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 m-8">
+            
+			<!-- source img4.jpg didownload dari situs unsplash.com, Jess Bailey - @jessbailey-->
+            <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
+                <img src="img/laravel.png" class="w-full rounded-lg">
+                <div class="px-2 py-2 text-center">
+                    <p class="font-bold text-xl mb-2 text-gray-700">E-Data System for research and community service lecturers at LP4M Informatics & Business Institute Darmajaya</p>
+                    <p class="text-gray-700 text-base">E-Data System for research and community service lecturers at LP4M IIB Darmajaya using laravel.</p>
+                </div>
+            </div>
+            <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
+				<!-- source img1.jpg didownload dari situs unsplash.com, koleksi Clément H - - @clemhlrdt -->
+                <img src="img/vue_laravel.png" class="w-full rounded-lg">
+                <div class="px-2 py-2 text-center">
+                    <p class="font-bold text-xl mb-2 text-gray-700">Develop and maintain HR Management System owned by Human Care Consulting Company</p>
+                    <p class="text-gray-700 text-base">Develop and maintain HR Management System owned by Human Care Consulting Company using laravel & vue.js.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!-- end my recent work -->
+	
+	<!-- section Work Exp -->
+    <section id="work-exp" class="w-screen mx-auto py-4 gradient-bottom">
+        <h1 class="w-full my-2 text-5xl font-bold text-center text-white">Work Experience</h1>
+        <div class="mb-4">
+            <div class="h-1 mx-auto bg-white  w-2/3 md:w-1/6 opacity-75 my-0 py-0 rounded"></div>
+        </div>
+        <div class="container p-4 mb-6 w-full lg:w-1/2 shadow-lg rounded-lg bg-white mx-auto">
+            <h4 class="text-2xl font-semibold">Full-stack Developer</h4>
+            <p class="mt-1 mb-4 text-gray-600">Human Care Consulting, January 2021 - Now</p>
+            <p class="mt-1 mb-4 text-gray-600">Jakarta Selatan, Jakarta, Indonesia (Remote)</p>
+            <a href="https://www.humancareconsulting.com" target="_blank" class="hover:text-indigo-900">
+                <i class="fas fa-globe"></i> https://www.humancareconsulting.com			 
+            </a>
+            <br>
+            <br>
+	    <hr>
+            <h4 class="text-2xl font-semibold">Technical Support Manager</h4>
+            <p class="mt-1 mb-4 text-gray-600">Kodland, April 2023 - Now</p>
+            <p class="mt-1 mb-4 text-gray-600">Remote</p>
+            <a href="https://www.kodland.org" target="_blank" class="hover:text-indigo-900">
+                <i class="fas fa-globe"></i> https://www.kodland.org			 
+            </a>
+	    <br>
+            <br>
+	    <hr>
+            <h4 class="text-2xl font-semibold">Python and Roblox (Lua) Tutor</h4>
+            <p class="mt-1 mb-4 text-gray-600">Kodland, August 2022 - Now</p>
+            <p class="mt-1 mb-4 text-gray-600">Remote</p>
+            <a href="https://www.kodland.org" target="_blank" class="hover:text-indigo-900">
+                <i class="fas fa-globe"></i> https://www.kodland.org			 
+            </a>
+            <br>
+            <br>
+        </div>
+    </section>
+	<!-- end section Work Exp -->
+
+    <section id="language-skills" class="container mx-auto py-4 bg-white px-4">
+        <div class="flex flex-wrap">
+			<!-- box pertama menampilkan gambar -->
+            <div class="w-full md:w-4/12 ml-auto mr-auto px-4 mt-20">
+				<!-- source img4.jpg didownload dari situs unsplash.com, Jess Bailey - @jessbailey-->
+				<img src="img/programmer.jpg" class="max-w-full rounded-lg shadow-lg">
+            </div>
+			
+			<!-- box kedua menampilkan skill framework -->
+            <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+                <div class="md:pr-12">
+                    <h1 class="w-full my-2 text-5xl font-bold text-center text-gray-700">My Language Skills</h1>
+                    <div class="mb-4">
+                        <div class="h-1 mx-auto gradient  w-2/3  opacity-75 my-0 mx-0 rounded"></div>
+                    </div>
+                    <p class="mt-4 text-lg text-gray-600">Here are my language skills :</p>
+                    <ul class="list-none mt-4">
+                        <li class="grid grid-cols-2 py-2">
+                            <p class="text-lg text-gray-600">Indonesian</p>
+                            <div class="gradient w-7/8"></div>
+                        </li>
+                        <li class="grid grid-cols-2 py-2">
+                            <p class="text-lg text-gray-600">English</p>
+                            <div class="gradient w-5/6"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<!-- section footer -->
+    <section id="contact" class="w-screen mx-auto py-4 bg-white mt-8 mb-8">
+		  <div class="text-center">
+			 <a href="https://www.linkedin.com/in/muhammad-ronaldo-9522371b3/" target="_blank" class="text-indigo-700 hover:text-indigo-900 p-2 ">
+               	 	   <i class="fa-2x fab fa-linkedin"></i>
+			 </a>
+			 <a href="https://www.instagram.com/ronaldo_rldo/" target="_blank" class="text-indigo-700 hover:text-indigo-900 p-2 ">
+			   <i class="fa-2x fab fa-instagram"></i>
+			 </a>
+			  <a href="https://github.com/mronaldo09" target="_blank" class="text-indigo-700 hover:text-indigo-900 p-2 ">
+			   <i class="fa-2x fab fa-github"></i>
+			 </a>
+		 </div>
+		 <div class="text-center mt-4 text-gray-600">
+            <input type="text" value="ronaldo.lampung09@gmail.com" id="myInput" hidden>
+            <button  class="hover:text-indigo-900" onclick="myFunction()"><i class="far fa-envelope"></i> : ronaldo.lampung09@gmail.com</button >
+            <br>
+            <i class="fas fa-map-marker-alt"></i> Lampung, Indonesia
+        </div>
+    </section>
+	<!-- end footer -->
+
+    <script>
+        function myFunction() {
+        /* Get the text field */
+        var copyText = document.getElementById("myInput");
+
+        /* Select the text field */
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        navigator.clipboard.writeText(copyText.value);
+
+        /* Alert the copied text */
+        alert("copy email successful");
+        }
+    </script>
+  </body>
+</html>
