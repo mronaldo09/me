@@ -41,8 +41,8 @@ function startGame() {
     time = 0;
     score = 0;
     meteors = [];
-    x = 110; 
-    y = 440;
+    x = (gameArea.clientWidth / 2) - (rocket.offsetWidth / 2);
+    y = gameArea.clientHeight - rocket.offsetHeight + 10;
     
     scoreText.innerText = score;
     document.querySelectorAll(".meteor, .star").forEach(el => el.remove());
@@ -67,7 +67,10 @@ function gameLoop(){
     if(keys["arrowleft"]) x-=1
     if(keys["arrowright"]) x+=1
 
-    x=Math.max(-85,Math.min(300,x))
+    let buffer = 85; 
+    let minLeft = -buffer;
+    let maxRight = (gameArea.clientWidth - rocket.offsetWidth) + buffer;
+    x=Math.max(minLeft,Math.min(maxRight,x))
     y=Math.max(0,Math.min(300,y))
  
 
